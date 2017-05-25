@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Optimax
+                    Hashtag Digital Optimax
                 </div>
 
                 <div class="links">
