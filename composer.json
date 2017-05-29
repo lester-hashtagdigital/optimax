@@ -6,17 +6,20 @@
     "type": "project",
     "require": {
         "php": ">=5.6.4",
+        "backendless/sdk-for-php": "^3.0",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
+        "graham-campbell/testbench": "^3.3",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~5.7"
     },
     "autoload": {
         "classmap": [
-            "database"
+            "database",
+            "vendor/backendless/sdk-for-php/backendless/autoload.php"
         ],
         "psr-4": {
             "App\\": "app/"

@@ -27,5 +27,8 @@
         <env name="CACHE_DRIVER" value="array"/>
         <env name="SESSION_DRIVER" value="array"/>
         <env name="QUEUE_DRIVER" value="sync"/>
+        <env name="BACKENDLESS_APPLICATION_ID" value="9819CC69-43B5-E0EB-FFD1-BE960D14F100"/>
+        <env name="BACKENDLESS_SECRET_KEY" value="2D18C421-0C3D-EC33-FF8A-2509F63B9C00"/>
+        <env name="BACKENDLESS_VERSION" value="v1"/>
     </php>
 </phpunit>
