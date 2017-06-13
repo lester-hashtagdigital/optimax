@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "798a16401f1b39d243209acb20f38f7b",
+    "content-hash": "5eaf0e362173184eaa16180150569063",
     "packages": [
         {
             "name": "backendless/sdk-for-php",
@@ -924,6 +924,49 @@
             "time": "2016-12-30T18:13:17+00:00"
         },
         {
+            "name": "lbhurtado/simple-txtcmdr-drivers",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lbhurtado/simple-txtcmdr-drivers.git",
+                "reference": "daaa76b7519d8d5216c0d599e25073164a66e37f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lbhurtado/simple-txtcmdr-drivers/zipball/daaa76b7519d8d5216c0d599e25073164a66e37f",
+                "reference": "daaa76b7519d8d5216c0d599e25073164a66e37f",
+                "shasum": ""
+            },
+            "require": {
+                "simplesoftwareio/simple-sms": "^2.1",
+                "telerivet/telerivet-php-client": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LBHurtado\\SMS\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lester Hurtado",
+                    "email": "lester@applester.co"
+                }
+            ],
+            "description": "Additional providers for Simple-SMS Laravel package",
+            "keywords": [
+                "laravel",
+                "sms",
+                "telerivet",
+                "txtcmdr"
+            ],
+            "time": "2016-05-07T01:42:43+00:00"
+        },
+        {
             "name": "league/flysystem",
             "version": "1.0.40",
             "source": {
@@ -1646,6 +1689,68 @@
                 "stylesheet"
             ],
             "time": "2015-08-24T08:48:52+00:00"
+        },
+        {
+            "name": "simplesoftwareio/simple-sms",
+            "version": "2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SimpleSoftwareIO/simple-sms.git",
+                "reference": "0e370319d83cdc692eef7238e6a8ad922f744d95"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SimpleSoftwareIO/simple-sms/zipball/0e370319d83cdc692eef7238e6a8ad922f744d95",
+                "reference": "0e370319d83cdc692eef7238e6a8ad922f744d95",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~6",
+                "illuminate/log": ">=5.0.0",
+                "illuminate/mail": ">=5.0.0",
+                "illuminate/queue": ">=5.0.0",
+                "illuminate/support": ">=5.0.0",
+                "illuminate/view": ">=5.0.0",
+                "php": ">=5.5.0",
+                "twilio/sdk": "~4"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "SimpleSoftwareIO\\SMS\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simple Software LLC",
+                    "email": "support@simplesoftware.io"
+                }
+            ],
+            "description": "Simple-SMS is a package made for Laravel to send/receive (polling/pushing) text messages.  Currently supports CallFire, EZTexting, Email Gateways, Mozeo, and Twilio.",
+            "homepage": "http://www.simplesoftware.io",
+            "keywords": [
+                "Simple",
+                "callfire",
+                "eztexting",
+                "labsmobile",
+                "laravel",
+                "mozeo",
+                "nexmo",
+                "receive",
+                "send",
+                "sms",
+                "text messages",
+                "twilio"
+            ],
+            "time": "2016-04-24T01:45:21+00:00"
         },
         {
             "name": "stripe/stripe-php",
@@ -2503,6 +2608,32 @@
             "time": "2017-05-22T17:32:12+00:00"
         },
         {
+            "name": "telerivet/telerivet-php-client",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Telerivet/telerivet-php-client.git",
+                "reference": "f79c39b45cdd4ea21bb0ae64c21bb9c4bdca69fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Telerivet/telerivet-php-client/zipball/f79c39b45cdd4ea21bb0ae64c21bb9c4bdca69fb",
+                "reference": "f79c39b45cdd4ea21bb0ae64c21bb9c4bdca69fb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHP client library for Telerivet REST API",
+            "homepage": "https://telerivet.com/api",
+            "time": "2014-07-10T23:06:03+00:00"
+        },
+        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.0",
             "source": {
@@ -2548,6 +2679,56 @@
             "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
             "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
             "time": "2016-09-20T12:50:39+00:00"
+        },
+        {
+            "name": "twilio/sdk",
+            "version": "4.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twilio/twilio-php.git",
+                "reference": "6e4b45fc3f8b56c088dfecf4bced76c712cb6182"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twilio/twilio-php/zipball/6e4b45fc3f8b56c088dfecf4bced76c712cb6182",
+                "reference": "6e4b45fc3f8b56c088dfecf4bced76c712cb6182",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.1"
+            },
+            "require-dev": {
+                "mockery/mockery": ">=0.7.2",
+                "phpunit/phpunit": "4.5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "Services/Twilio.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Burke",
+                    "email": "kevin@twilio.com"
+                },
+                {
+                    "name": "Kyle Conroy",
+                    "email": "kyle+pear@twilio.com"
+                }
+            ],
+            "description": "A PHP wrapper for Twilio's API",
+            "homepage": "http://github.com/twilio/twilio-php",
+            "keywords": [
+                "api",
+                "sms",
+                "twilio"
+            ],
+            "time": "2016-09-01T18:42:52+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
